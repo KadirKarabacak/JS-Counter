@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+/* 
+RESPONSIVE BREAKPOINTS
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-size: 62.5%;
+  /* backdrop-filter: blur(6px) saturate(200%); */
+  /* -webkit-backdrop-filter: blur(6px) saturate(200%); */
+  background-image: linear-gradient(
+    to right bottom,
+    #adb5bd,
+    #9ca5ad,
+    #8c949c,
+    #7c858d,
+    #6c757d
+  );
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rem 0;
+}
+
+.app {
+  box-shadow: 0px 6.2px 4.9px rgba(0, 0, 0, 0.024),
+    0px 17.2px 13.5px rgba(0, 0, 0, 0.035),
+    0px 41.3px 32.6px rgba(0, 0, 0, 0.046), 0px 137px 108px rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(6px) saturate(200%);
+  -webkit-backdrop-filter: blur(6px) saturate(200%);
+  background-color: rgba(65, 117, 5, 0.418);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  width: 50%;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0;
+  border-radius: 0.5rem;
+}
+
+/* .app__heading {
+} */
+.app_heading--primary {
+  font-size: 4rem;
+  color: #fff;
+}
+.app_counter {
+  text-align: center;
+  font-size: 3.5rem;
+  background-color: #fff;
+  padding: 2rem 2rem;
+  border-radius: 5px;
+  width: 25%;
+}
+.app__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.btn {
+  font-size: 1.5rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  margin-right: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.5s;
+  outline: none;
+  box-shadow: 0 1rem 2rem #00000028;
+}
+
+.btn:hover {
+  outline-offset: 0.8rem;
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.3rem 1rem #000000eb;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.1rem 0.5rem #000000eb;
+}
+
+.btn--decrease {
+  color: white;
+
+  background-color: rgba(255, 0, 0, 0.747);
+}
+.btn--decrease:hover {
+  background-color: rgb(255, 0, 0);
+  animation: fadeOutDecrease 0.8s;
+}
+.btn--reset:hover {
+  background-color: #ccc;
+  animation: fadeOutReset 0.8s;
+}
+.btn--increase {
+  color: white;
+  background-color: #70e000;
+}
+
+.btn--increase:hover {
+  animation: fadeOutIncrease 0.8s;
+  background-color: #38b000;
+}
+
+@keyframes fadeOutDecrease {
+  0% {
+    outline: 1px solid rgb(255, 0, 0);
+  }
+  50% {
+    outline: 5px solid rgb(255, 0, 0);
+  }
+  100% {
+    outline: none;
+  }
+}
+
+@keyframes fadeOutReset {
+  0% {
+    outline: 1px solid #ccc;
+  }
+  50% {
+    outline: 5px solid #ccc;
+  }
+  100% {
+    outline: none;
+  }
+}
+
+@keyframes fadeOutIncrease {
+  0% {
+    outline: 1px solid #38b000;
+  }
+  50% {
+    outline: 5px solid #38b000;
+  }
+  100% {
+    outline: none;
+  }
+}
